@@ -8,5 +8,5 @@
 - Push the image: `docker push <DOCKER-REGISTRY-HOST>/<NAMESPACE>/<IMAGESTREAM>:<TAG>` (`docker push myregistry.com/dieter/simpleapi:latest`)
 - Create a new app based on this image: `oc new-app <NAMESPACE>/<IMAGESTREAM>:<TAG>` (`oc new-app dieter/simpleapi:latest`)
 - Expose the service: `oc expose svc <SERVICENAME>` (`oc expose svc simpleapi`)
-- Get the route: `oc get route`
+- Get the route: `oc get route simpleapi`
 - Do a curl
